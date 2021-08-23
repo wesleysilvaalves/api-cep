@@ -1,21 +1,14 @@
-Dado("que eu faça um get na api") do
-    get_cep_valido
-  end
 
-  Quando("eu faço uma consulta dos dados") do
-    expect(@retorno.code) 
-    puts @retorno
-  end
-  
-  Então("espero que o codigo de retorno seja {int}  e o valor do campo ibge seja exibido") do |valor|
-    expect(@retorno.code).to eq(valor)
+ Dado('que eu faça uma requisição para API de CEPs com um cep valido') do
+  get_cep_valido
+ end
+
+  Então("espero que o codigo ibge seja exibido") do 
+    expect(@retorno.code)
     puts @retorno['ibge']
-
   end
 
-  
-
-  Dado("que eu faça um chamada na api") do
+  Dado('que eu faça uma requisição para API de CEPs com um cep invalido') do
     get_cep_invalido
   end
   

@@ -1,5 +1,4 @@
 require 'rspec'
-require 'pry'
  require 'capybara/cucumber'
  require 'httparty'
  require 'json'

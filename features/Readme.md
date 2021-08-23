@@ -21,3 +21,9 @@ $ bundle install
 ```ruby
 $ cucumber
 ```
+## Gerar um relatorio html 
+> Use o seguinte comando para gerar um relatorio html dos testes
+
+```ruby
+cucumber -f pretty -f html -o report.html
+```

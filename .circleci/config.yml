@@ -16,6 +16,9 @@ jobs:
             sudo rm /usr/local/bin/bundler
             sudo gem install bundler
             sudo gem install cucumber
+            sudo gem install rspec
+            sudo gem install pry
+            sudo gem install httparty
             bundle install    
       - run: 
           name: Cucumber

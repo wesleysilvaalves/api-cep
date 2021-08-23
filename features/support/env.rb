@@ -1,5 +1,5 @@
 require 'rspec'
- require 'capybara/cucumber'
+ require 'cucumber'
  require 'httparty'
  require 'json'
  require 'base64'

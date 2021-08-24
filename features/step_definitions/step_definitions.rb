@@ -9,7 +9,7 @@ end
   Então("espero que o codigo ibge seja exibido") do 
     
     expect(@retorno)
-    puts @retorno['ibge']
+    puts('IBGE: ' + @retorno['ibge'])
   end
 
   Dado('que eu faça uma requisição para API de CEPs com um cep invalido') do
